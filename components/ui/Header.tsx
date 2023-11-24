@@ -85,7 +85,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-between !bg-transparent">
         <div className="relative w-[120px] h-[33px]  ">
-          <Image src="/assets/icons/logo.svg" alt="logo" fill />
+          <Image src="/assets/images/plain-logo.png" alt="logo" fill />
         </div>
         <div className="flex items-center gap-16">
           <div className="hidden xl:flex gap-10 items-center">
