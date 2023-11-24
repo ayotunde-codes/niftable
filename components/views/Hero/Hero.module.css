@@ -1,0 +1,21 @@
+.overlay {
+  background: linear-gradient(
+    175deg,
+    #000 4.29%,
+    #3d8bff 47.39%,
+    #ab23ff 95.05%
+  );
+  mix-blend-mode: soft-light;
+}
+.gradientText {
+  background: var(--Linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientBorder {
+  border-top: 1px solid var(--Linear, #3d8bff);
+  border-bottom: 1px solid var(--Linear, #3d8bff);
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
