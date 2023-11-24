@@ -35,7 +35,8 @@ const Hero = () => {
               crypto.
             </h1>
             <h1 className="hidden lg:block font-monumentExtended lg:text-[44px] xl:text-[68px] leading-[110%]">
-              The world's first platform for Tokenizing AI blockchain projects
+              The world&aposs first platform for Tokenizing AI blockchain
+              projects
             </h1>
             <div
               className={cn(
