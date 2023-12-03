@@ -1,6 +1,11 @@
-import Image from "next/image";
+"use client";
 import cn from "classnames";
 import styles from "./Hero.module.css";
+import { motion } from "framer-motion";
+import {
+  slideUpOpacityGlitchVariant,
+  slideUpOpacityVariant,
+} from "@/utils/animationVariants";
 
 const Hero = () => {
   return (
@@ -34,21 +39,29 @@ const Hero = () => {
               Empowering AI-Crypto Innovations and Integrating AI Tools into
               crypto.
             </h1>
-            <h1 className="hidden lg:block font-monumentExtended lg:text-[44px] xl:text-[68px] leading-[110%]">
+            <motion.h1
+              variants={slideUpOpacityGlitchVariant}
+              initial="initial"
+              animate="animate"
+              className="hidden lg:block font-monumentExtended lg:text-[44px] xl:text-[68px] leading-[110%]"
+            >
               The world&aposs first platform for Tokenizing AI blockchain
               projects
-            </h1>
-            <div
+            </motion.h1>
+            <motion.div
               className={cn(
                 "w-full sm:max-w-[465px] lg:max-w-[630px] py-1.5",
                 styles.gradientBorder
               )}
+              variants={slideUpOpacityVariant}
+              initial="initial"
+              animate="animate"
             >
               <p className={cn("font-satoshi font-bold", styles.gradientText)}>
                 Creon «Create On» confidential AI Tools for granting access
                 through NFTs.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
