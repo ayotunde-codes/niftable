@@ -34,7 +34,7 @@ body.overflow-hidden {
     @apply 2xl:max-w-[1440px] max-w-[1280px] mx-auto px-4  sm:px-[30px] w-full h-full;
   }
   .socialIconWrapper {
-    @apply flex items-center cursor-pointer justify-center w-[34px] h-[34px] rounded-full border border-white;
+    @apply flex items-center cursor-pointer transition-colors  justify-center w-[34px] h-[34px] rounded-full border border-white duration-150 ease-in-out hover:bg-blue hover:border-blue;
   }
   .coloredOverlay {
     @apply absolute top-0 left-0 w-full h-full pointer-events-none;
@@ -69,13 +69,17 @@ body.overflow-hidden {
     -webkit-text-fill-color: transparent;
   }
   .gradient-button {
-    @apply text-base font-satoshi lg:text-lg py-4 w-full cursor-pointer;
+    @apply text-base font-satoshi lg:text-lg py-4 w-full cursor-pointer  transition-all duration-500 ease-in-out rounded-xl;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--Linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
   }
+  /* .gradient-button:hover {
+    @apply transition-colors duration-500 ease-in-out;
+    background: #3d8bff;
+  } */
   .heading-2 {
     @apply font-monumentExtended text-[32px] sm:text-[44px] leading-[110%] xl:text-[68px];
   }

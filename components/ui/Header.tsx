@@ -1,4 +1,5 @@
 "use client";
+import Button from "./Button";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -228,7 +229,12 @@ const Header = () => {
                 </motion.aside>
               )}
             </AnimatePresence>
-            <div className="btn-outline">Connect</div>
+
+            <Button
+              text="Connect"
+              onClick={() => {}}
+              className="btn-outline hover:border-blue"
+            />
             <div
               onClick={() => {
                 cycleOpen();

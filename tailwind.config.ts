@@ -19,7 +19,8 @@ const config: Config = {
       },
       colors: {
         "grey-line": "#13171D",
-        purple: "#AB23FF"
+        purple: "#AB23FF",
+        blue: "#3D8BFF"
       },
     },
   },

@@ -1,3 +1,5 @@
+"use client";
+import Button from "@/components/ui/Button";
 import React from "react";
 
 const CreonSection = () => {
@@ -26,6 +28,7 @@ const CreonSection = () => {
                 Revenue share distribution from Creon built AI projects
               </p>
             </div>
+
             <div className="lg:hidden gap-10 sm:gap-0 grid sm:grid-cols-2">
               <div className="grid grid-cols-12 h-max gap-8 font-satoshi order-2 sm:order-1">
                 <p className="col-span-12">
@@ -58,9 +61,11 @@ const CreonSection = () => {
               </div>
             </div>
 
-            <div className="gradient-button lg:mt-8 sm:max-w-[231px] xl:max-w-[413px] 2xl:max-w-[453px]">
-              Buy Creon Pass
-            </div>
+            <Button
+              onClick={() => {}}
+              text="Buy Creon Pass"
+              className="gradient-button lg:mt-8 sm:max-w-[231px] xl:max-w-[413px] 2xl:max-w-[453px]"
+            />
           </div>
 
           <div className="w-full h-full relative hidden lg:block">
