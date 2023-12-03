@@ -104,7 +104,7 @@ const Header = () => {
                 <Link
                   href={link.href}
                   key={link.title}
-                  className=" cursor-pointer "
+                  className=" cursor-pointer hover:text-blue link-text transition-all duration-300"
                 >
                   {link.title}
                 </Link>
@@ -189,7 +189,7 @@ const Header = () => {
                                       href={link.href}
                                       key={link.title}
                                       className={cn(
-                                        "py-4 cursor-pointer border-b border-grey-line",
+                                        "py-4 cursor-pointer border-b border-grey-line hover:text-blue transition-all duration-300",
                                         {
                                           "border-b-0":
                                             index === linksData.length - 1,
