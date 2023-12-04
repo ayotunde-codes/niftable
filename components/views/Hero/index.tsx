@@ -2,6 +2,7 @@
 import cn from "classnames";
 import styles from "./Hero.module.css";
 import { motion } from "framer-motion";
+
 import {
   slideUpOpacityGlitchVariant,
   slideUpOpacityVariant,
@@ -35,10 +36,15 @@ const Hero = () => {
       <div className="relative w-full h-[710px] sm:h-[770px] md:h-[900px] lg:h-[667px] xl:h-[770px]">
         <div className="container text-white ">
           <div className="h-full flex flex-col z-[2] relative justify-end pb-[70px] gap-5 xl:gap-10 md:pb-28">
-            <h1 className="font-monumentExtended text-[32px] sm:text-[38px] md:text-[44px] leading-[110%] sm:max-w-[465px] lg:hidden">
+            <motion.h1
+              variants={slideUpOpacityGlitchVariant}
+              initial="initial"
+              animate="animate"
+              className="font-monumentExtended text-[32px] sm:text-[38px] md:text-[44px] leading-[110%] sm:max-w-[465px] lg:hidden"
+            >
               Empowering AI-Crypto Innovations and Integrating AI Tools into
               crypto.
-            </h1>
+            </motion.h1>
             <motion.h1
               variants={slideUpOpacityGlitchVariant}
               initial="initial"

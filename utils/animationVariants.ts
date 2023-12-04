@@ -44,3 +44,28 @@ export const slideUpOpacityGlitchVariant = {
       },
     },
   };
+  export const slideUpOpacityVariantWithoutDelay =  {
+    initial: {
+      y: 60,
+      opacity: 0,
+    },
+    animate: {
+      y: "0%",
+      opacity: 1,
+      transition: {
+        y: {
+            duration: 0.5,
+            ease: "easeInOut",
+        },
+        opacity: {
+          duration: 0.5,
+          easings: "easeInOut",
+        },
+      },
+    },
+  };
+
+  export  const viewport = {
+    margin: "-200px",
+    once: true,
+  };

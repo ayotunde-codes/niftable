@@ -31,11 +31,11 @@ const ComingSoonCard = ({
         <div className="w-full h-full relative overflow-hidden">
           <motion.div
             whileHover={{
-              scale: 1.07,
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeInOut",
+              scale: 1.2,
+              transition: {
+                ease: "easeInOut",
+                duration: 0.5,
+              },
             }}
             className="w-full h-full relative"
           >
