@@ -45,11 +45,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/icons/logo.svg" sizes="any" />
+        <link rel="icon" href="/assets/images/logo.png" sizes="any" />
+      </head>
       <body
         className={cn(satoshi.variable, MonumentExtended.variable, "relative")}
       >
-        <link rel="icon" href="/assets/icons/logo.svg" sizes="any" />
-        <link rel="icon" href="/assets/images/logo.png" sizes="any" />
         <div className="absolute bottom-0 left-0 w-full pointer-events-none h-[750px] sm:h-[950px]">
           <div className="w-full h-full relative">
             <video
