@@ -47,7 +47,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/assets/icons/logo.svg" sizes="any" />
-        <link rel="icon" href="/assets/images/logo.png" sizes="any" />
       </head>
       <body
         className={cn(satoshi.variable, MonumentExtended.variable, "relative")}
